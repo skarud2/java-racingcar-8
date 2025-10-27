@@ -1,4 +1,5 @@
 package racingcar.service;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -8,16 +9,16 @@ public class RacingService {
         String[] names = carNames.split(",");
         Set<String> uniqueNames = new HashSet<>();
 
-        for (String name: names) {
+        for (String name : names) {
             String trimmed = name.trim().toLowerCase();
 
             if (trimmed.isEmpty()) {
                 throw new IllegalArgumentException("자동차 이름을 입력해주세요.");
             }
-            if (names.length <2) {
+            if (names.length < 2) {
                 throw new IllegalArgumentException("경주할 자동차 이름을 2개 이상 입력하세요.");
             }
-            if (trimmed.length() >5) {
+            if (trimmed.length() > 5) {
                 throw new IllegalArgumentException("자동차 이름은 5자 이하로 입력해주세요.");
             }
             if (uniqueNames.contains(trimmed)) {
