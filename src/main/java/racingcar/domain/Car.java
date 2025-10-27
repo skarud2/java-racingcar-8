@@ -27,7 +27,7 @@ public class Car {
 
     public String getStatus() {
         StringBuilder sb = new StringBuilder();
-        sb.append(name).append(": ");
+        sb.append(name).append(" : ");
         for (int i = 0; i < position; i++) {
             sb.append("-");
         }

@@ -4,7 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class RacingService {
-
     public void validateCarNames(String carNames) {
         String[] names = carNames.split(",");
         Set<String> uniqueNames = new HashSet<>();
