@@ -7,10 +7,10 @@ import java.util.List;
 
 public class RacingController {
     public void startRace(String names, int attempts) {
-        String[] carNames = names.split(",");
+        String[] nameList = names.split(",");
         List<Car> cars = new ArrayList<>();
 
-        for (String carName : carNames) {
+        for (String carName : nameList) {
             cars.add(new Car(carName.trim()));
         }
 
